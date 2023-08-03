@@ -1,0 +1,215 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary: #82DFF6;      /* Primary color */
+  --secondary: #f784F5;    /* Secondary color */
+  --white: #FFFFFF;        /* White color */
+  --background: #0F0823;   /* Background color */
+  --main-font: 'Inconsolata', monospace; /* Main font */
+  --quote-font: 'Montserrat', sans-serif; /* Quote font */
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles for body */
+body {
+  background-color: var(--background);
+  font-family: var(--main-font);
+}
+
+/* Global styles for buttons */
+button {
+  font-family: var(--main-font);
+}
+
+/* Styles for navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  padding: 20px 25px;
+}
+
+/* Styles for navigation header with gradient text */
+nav h3 {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Styles for navigation menu list */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+/* Hover styles for navigation menu items */
+nav ul li:hover {
+  color: var(--secondary);
+}
+
+/* Pseudo-element styles for hover effect on navigation menu items */
+nav ul li:hover::after,
+nav ul li:hover::before {
+  content: "";
+  width: 60%;
+  display: block;
+  margin: 0px 10px;
+}
+
+/* Pseudo-element styles for hover effect on navigation menu items */
+nav ul li:hover::after {
+  border-bottom: 2px solid var(--secondary);
+}
+
+/* Pseudo-element styles for hover effect on navigation menu items */
+nav ul li:hover::before {
+  border-top: 2px solid var(--secondary);
+}
+
+/* Styles for navigation bar content */
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+/* Styles for navigation buttons */
+nav div button {
+  padding: 5px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+}
+
+/* Styles for icons inside navigation buttons */
+nav div button i {
+  color: var(--white);
+}
+
+/* Styles for links inside navigation buttons */
+nav div button a {
+  color: inherit;
+}
+
+/* Styles for the last button in navigation bar with gradient background */
+nav div button:last-child {
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+  padding: 5px 10px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  width: fit-content;
+}
+
+/* Hover styles for the last button in navigation bar */
+nav div button:last-child:hover {
+  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+}
+
+/* Styles for the hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Styles for the image in the hero section */
+.hero .left-hero img {
+  width: 100%;
+  height: 538px;
+}
+
+/* Styles for the right section in the hero */
+.hero .right-hero {
+  color: var(--white);
+  font-size: 30px;
+  width: 40%;
+}
+
+/* Styles for the elements inside the right section of hero */
+.right-hero div {
+  margin-bottom: 20px;
+}
+
+/* Styles for the title in the right section of hero */
+.right-hero #title {
+  margin-left: 50px;
+}
+
+/* Styles for the name with gradient text in the right section of hero */
+.hero .right-hero .name {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--secondary), var(--primary)) 1;
+  padding: 4px 12px;
+  margin-left: 40px;
+  width: fit-content;
+  box-shadow: 1px 5px 20px rgba(241, 239, 239, 0.2);
+  position: relative;
+}
+
+/* Styles for the decorative boxes around the name in the right section of hero */
+.hero .right-hero .name .box {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--secondary), var(--primary)) 1;
+  position: absolute;
+}
+
+.box.top-left {
+  top: -8px;
+  left: -9px;
+}
+
+.box.top-right {
+  top: -8px;
+  left: 251px;
+}
+
+.box.bottom-right {
+  top: 40px;
+  left: 250px;
+}
+
+.box.bottom-left {
+  top: 39px;
+  left: -9px;
+}
+
+/* Styles for the buttons in the right section of hero */
+.right-hero button {
+  align-self: center;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 5px 20px rgba(241, 239, 239, 0.2);
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/* Styles for the links inside the buttons in the right section of hero */
+.right-hero button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Styles for the cloud download icon */
+.fa-cloud-download {
+  margin-right: 10px;
+}

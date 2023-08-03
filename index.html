@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek | Portfolio</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Script for the Typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <!-- Website title -->
+            <h3>Abhishek</h3>
+            <!-- Navigation menu -->
+            <ul>
+                <li>About Me</li>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>Contacts</li>
+            </ul>
+            <!-- Social media and contact buttons -->
+            <div>
+                <button><a href="https://www.linkedin.com/in/abhishek-sharma-19430b18b/" target="_blank"><i class="fa fa-linkedin"></i></a></button>
+                <button><a href="https://github.com/abhishek7329sharma" target="_blank"><i class="fa fa-github"></i></a></button>
+                <button>Contact Me</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <!-- Left side of the hero section with an image -->
+            <div class="left-hero">
+                <img src="./assert/images/main.png" alt="hero-img">
+            </div>
+            <!-- Right side of the hero section with introductory text and name -->
+            <div class="right-hero">
+                <div>Hello! I am</div>
+                <div class="name">
+                    <!-- Decorative boxes around the name -->
+                    <span class="box top-left"></span>
+                    <span class="box top-right"></span>
+                    <span class="box bottom-left"></span>
+                    <span class="box bottom-right"></span>
+                    Abhishek Sharma
+                </div>
+                <!-- Element to display dynamically typed title -->
+                <span id="title"></span> <br>
+                <!-- Button to download the resume -->
+                <button><a href="./assert/resume/Abhishek_Sharma_Resume.pdf" download><i class="fa fa-cloud-download"></i>Resume</a></button>
+            </div>
+        </section>
+    </main>
+    <!-- Script to initialize Typed.js -->
+    <script>
+        var typed = new Typed('#title', {
+          strings: ['Frontend Developer', 'UI Developer'],
+          typeSpeed: 100,       // Typing speed in milliseconds
+          backSpeed: 30,       // Backspacing speed in milliseconds
+          loop: true           // Infinite loop
+        });
+      </script>
+</body>
+
+</html>
