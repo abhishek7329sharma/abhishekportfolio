@@ -22,8 +22,8 @@
             <h3>Abhishek</h3>
             <!-- Navigation menu -->
             <ul>
-                <li>About Me</li>
-                <li>Skills</li>
+                <li onclick="scrollToAboutMe('about-me')">About Me</li>
+                <li onclick="scrollToAboutMe('skills')">Skills</li>
                 <li>Projects</li>
                 <li>Contacts</li>
             </ul>
@@ -60,6 +60,57 @@
                 <button><a href="./assert/resume/Abhishek_Sharma_Resume.pdf" download><i class="fa fa-cloud-download"></i>Resume</a></button>
             </div>
         </section>
+        <section id="about-me">
+            <p class="header-title">&gt; About Me</p>
+            <div class="about-card-container">
+                <div class="card">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <div class="card-container">
+                        <img class="card-title" src="./assert/images/india.png" alt="country">
+                        <p class="description">I'm from India</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <div class="card-container">
+                        <p class="card-title">3</p>
+                        <p class="description">years of experience in Web Development</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <div class="card-container">
+                        <img class="card-title" src="./assert/images/pngaaa.com-6258697.png" alt="college">
+                        <p class="description">Reva Institue of Technology and Management, Bangalore</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <p class="header-title"> &gt; Skills</p>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img class="skill-image" src="./assert/images/html.png" alt="html-logo">
+                </div>
+                <div class="skill-card">
+                    <img class="skill-image" src="./assert/images/css.png" alt="css-logo">
+                </div>
+                <div class="skill-card">
+                    <img class="skill-image" src="./assert/images/javascript.png" alt="javascript-logo">
+                </div>
+                <div class="skill-card">
+                    <img class="skill-image" src="./assert/images/react.png" alt="react-logo">
+                </div>
+                <div class="skill-card">
+                    <img class="skill-image" src="./assert/images/jquery.png" alt="jquery-logo">
+                </div>
+            </div>
+            <div class="skill-define">
+                <p>"Versatitlity defines my skill set, encompassing a diverse range of disciplines. I am constantly driven to expand my knowledge and expertise, fueling my personal and professional growth"</p>
+                <img src="./assert/images/—Pngtree—coder clipart boy working with_11072679.png" alt="avatar">
+            </div>
+        </section>
+
     </main>
     <!-- Script to initialize Typed.js -->
     <script>
@@ -70,6 +121,7 @@
           loop: true           // Infinite loop
         });
       </script>
+      <script src="script.js"></script>
 </body>
 
 </html>
